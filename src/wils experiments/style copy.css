@@ -1,0 +1,164 @@
+p {
+  font-size: xx-large;
+  animation-duration: 3s;
+  animation-name: slide-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes slide-in {
+  from {
+    translate: 150vw 0;
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
+
+p span{
+  display: inline-block;
+  animation: grow-shrink 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes grow-shrink {
+  25%,
+  75% {
+    scale: 100%;
+  }
+
+  50% {
+    scale: 200%;
+    color: magenta;
+  }
+}
+
+
+html {
+  height: 100vh;
+}
+
+div {
+  font-size: 1.6rem;
+  padding: 20px;
+  border: 3px solid red;
+  border-radius: 20px;
+  width: 480px;
+  opacity: 0;
+  display: none;
+}
+
+/* Animation classes */
+
+div.fade-in {
+  display: block;
+  animation: fade-in 0.7s ease-in forwards;
+}
+
+div.fade-out {
+  animation: fade-out 0.7s ease-out forwards;
+}
+
+/* Animation keyframes */
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+
+  100% {
+    opacity: 1;
+    display: block;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+    display: block;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+
+
+/* Start with basic layouts */
+.card {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    /* Understand why this works: */
+    width: 50%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .card {
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform 0.5s;
+  }
+  .card:hover {
+    /* Understand each number's purpose: */
+    transform: perspective(1000px) rotateY(180deg);
+  }
+
+  .button {
+    padding: 30px;
+    background: blue;
+    /* Understand each property's role: */
+    transition: 
+      background 0.3s ease-in-out,
+      transform 0.2s ease-out;
+  }
+  .button:hover {
+    background: darkblue;
+    transform: scale(1.05);
+  }
+
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 40px;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.bouncing-element {
+    width: 50px;
+    height: 50px;
+    background: #2563eb;
+    border-radius: 50%;
+    animation: bounce 1s ease-in-out infinite;
+}
+
+.pulsing-element {
+    width: 50px;
+    height: 50px;
+    background: #dc2626;
+    border-radius: 50%;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+
+
+
+

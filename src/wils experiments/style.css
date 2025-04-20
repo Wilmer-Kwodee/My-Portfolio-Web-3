@@ -1,0 +1,151 @@
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.test{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  animation: anim1 2s;
+  animation: pulse 2s;
+}
+
+@keyframes anim1{
+  from{
+    scale: 10;
+  }
+  to{
+    scale: 1;
+  }
+}
+@keyframes pulse{
+  0%{
+    color: black;
+  }
+  50%{
+    color: red;
+  }
+  100%{
+    color: black;
+  }
+}
+
+.fiftypercent{
+  width: 50%;
+  padding-bottom: 25%;
+  background-color: red;
+}
+.fiftypercent2{
+  width: 100%;
+  padding-bottom: 25%;
+  background-color: yellow;
+}
+
+.some-button{
+  background-color: cyan;
+  padding: 12px;
+  width: 25%;
+  opacity: 1;
+  transition: 
+    opacity 1s,
+    background-color 1s,
+    rotate 1s;
+}
+
+.some-button:hover{
+  opacity: 0.5;
+  background-color: blue;
+  rotate: 2deg;
+}
+
+
+
+.home-section-1{
+  width: auto;
+  height: 400px;
+  background: 
+    repeating-linear-gradient(
+      -75deg, 
+      rgba(255, 255, 255, 0.1) 0px, 
+      rgba(255, 255, 255, 0.1) 20px, 
+      rgba(255, 255, 255, 0) 20px, 
+      rgba(255, 255, 255, 0) 40px
+    ),
+    /* rgba(155, 0, 0, 1); */
+    linear-gradient(to right, #FF7E00, #FF0066);
+}
+
+.home-section-1__title{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-style: italic;
+  font-size: 2.5rem;
+
+  position: absolute;
+  top: 2rem;
+  right: 6rem;
+  margin: 0;
+}
+
+.home-section-2{
+  position: relative;
+  width: auto;
+  height: 700px;
+  display: grid;
+  place-content: center;
+}
+.home-section-2__text-1{
+  position: absolute;
+  right: 6rem;
+  top: 3rem;
+  font-style: italic;
+  font-size: 4rem;
+}
+.home-section-2__text-2{
+  position: absolute;
+  left: 6rem;
+  bottom: 3rem;
+  font-style: italic;
+  font-size: 4rem;
+}
+@keyframes path{
+  0%{
+   stroke-dashoffset: 700; 
+  }
+  100%{
+   stroke-dashoffset: 0; 
+  }
+}
+path{
+  stroke-dasharray: 700;
+ stroke-dashoffset: 0; 
+ animation: path;
+ animation-timeline: scroll();
+}
+
+.home-section-3{
+  width: auto;
+  height: 500px;
+
+  background: 
+    repeating-linear-gradient(
+      75deg,
+      rgba(255,255,255, 0.2) 0px,
+      rgba(255,255,255, 0.2) 20px,
+      rgba(255,255,255, 0) 20px,
+      rgba(255,255,255, 0) 40px
+    ),
+    linear-gradient(to right, cyan, lime);
+}
+
+.home-section-3__title{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+
+  padding-top: 200px;
+  text-align: center;
+  letter-spacing: .4rem;
+}
+

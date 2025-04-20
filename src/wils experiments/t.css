@@ -1,0 +1,21 @@
+body{
+  margin: 0;
+}
+
+  .home-1{
+    height: 300px;
+    background: rgb(200, 200, 0);
+    position: relative;
+  }
+
+  .ini-adalah-absolute{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+  }
+
+  .home-2{
+    height: 400px;
+    background-color: cyan;
+  }
