@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { db, getCities } from '../firebase';
 import Card from './components/Card';
 import './HomeStyle.css';
+import meB from './assets/meB.jpg';
 
 export default function Home() {
   const [notes, setNotes] = useState([]);
@@ -34,8 +35,8 @@ export default function Home() {
       <br class="the-br"/><a href="#teleport-here" class="button">Contact Me!</a>
     </div>
     <div class="image contact">
-          <img src="/src/assets/me B.jpg" alt="img nt fnd"/>
-        </div>
+      <img src={meB} alt="img nt fnd" />
+    </div>
 
     </div>
     </div>   
