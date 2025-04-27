@@ -3,18 +3,19 @@ import { db, getCities } from '../firebase';
 import Card from './components/Card';
 import './HomeStyle.css';
 import meB from './assets/meB.jpg';
+import notes from './constants/notes';
 
 export default function Home() {
-  const [notes, setNotes] = useState([]);
+  // const [notes, setNotes] = useState([]);
 
-  async function fetchNotes(){
-    const temp = await getCities(db);
-    setNotes(temp);
-  }
+  // async function fetchNotes(){
+  //   const temp = await getCities(db);
+  //   setNotes(temp);
+  // }
 
-  useEffect(() => {
-      fetchNotes();
-  }, []);
+  // useEffect(() => {
+  //     fetchNotes();
+  // }, []);
 
   return (
     <div style={{fontFamily: 'Arial, Helvetica'}}>
