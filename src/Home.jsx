@@ -65,8 +65,33 @@ export default function Home() {
         }
         )}
     </div>
+    
+    <div className="bg-[#eeeeee] section-pengalaman -100 p-24">
+        <div>
+          <h1><b>Experiences</b></h1>
+        </div>
+        <div>
+          <p>2024 - Present: IT Division @Binus</p>
+          <p>
+            
+            <li>Academic-Services Project (January 25 - September 25): 
+              <br />&nbsp;&nbsp;&nbsp;&nbsp;Skill: <b>ReactJS + Typescript, ASP.NET Core, CosmosDB, MySQL</b>
+            </li>
+            <li>Recruitment Site Project (May 24 - October 24): 
+              <br />&nbsp;&nbsp;&nbsp;&nbsp;Skill: <b>ASP.NET Core, Razor, MySQL</b>
+            </li>
+          </p>
+        </div>
+        <br />
+        <div>
+          <p>2023, September - 2025, January: Schoolarship Mentor @SASC Binus</p>
+          <p> 
+            <li>Skill: Teaching, Communication</li>
+          </p>
+        </div>
+    </div>
 
-    <div className='footer-collaborate mb-60' id="teleport-here">
+    <div className='footer-collaborate mb-60 mt-60' id="teleport-here">
       <p className='footer-collaborate__title text-center text-5xl font-bold animate-pulse'>
         Let's Collaborate! 👋
       </p>
