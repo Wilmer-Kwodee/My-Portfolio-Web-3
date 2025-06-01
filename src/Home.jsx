@@ -68,21 +68,35 @@ export default function Home() {
     
     <div className="bg-[#eeeeee] section-pengalaman -100 p-24">
         <div>
-          <h1><b>Experiences</b></h1>
+          <h1 className='text-4xl mb-10'><b>Experiences</b></h1>
         </div>
         <div>
           <p>2024 - Present: IT Division @Binus</p>
           <p>
             
-            <li>Academic-Services Project (January 25 - September 25): 
+            <li>Academic-Services Project (January 2025 - Present): 
               <br />&nbsp;&nbsp;&nbsp;&nbsp;Skill: <b>ReactJS + Typescript, ASP.NET Core, CosmosDB, MySQL</b>
+              <div className="flex gap-5 pt-5">
+                <img src={`/SVGs/react.svg`} className="w-10"/>
+                <img src={`/SVGs/typescript.svg`} className="w-10"/>
+                <img src={`/SVGs/aspnet.svg`} className="w-10"/>
+                <img src={`/SVGs/microsoft_azure.svg`} className="w-10"/>
+                <img src={`/SVGs/azure_cosmos_db.svg`} className="w-10"/>
+                <img src={`/SVGs/mysql.svg`} className="w-10"/>
+              </div>
             </li>
-            <li>Recruitment Site Project (May 24 - October 24): 
+            <br />
+            <li>Recruitment Site Project (May 2024 - October 2024): 
               <br />&nbsp;&nbsp;&nbsp;&nbsp;Skill: <b>ASP.NET Core, Razor, MySQL</b>
+              <div className="flex gap-5 pt-5">
+                <img src={`/SVGs/aspnet.svg`} className="w-10"/>
+                <img src={`/SVGs/razor.png`} className="w-10"/>
+                <img src={`/SVGs/mysql.svg`} className="w-10"/>
+              </div>
             </li>
           </p>
         </div>
-        <br />
+        <br /><br /><br />
         <div>
           <p>2023, September - 2025, January: Schoolarship Mentor @SASC Binus</p>
           <p> 
